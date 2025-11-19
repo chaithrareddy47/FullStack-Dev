@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>CatPhotoApp</h1>
+
+      <!-- h1 to h6 heading ellemts  
+Only use one h1 element per page and place lower importance headings below higher importance headings. 
+-->
+
+<section>
+      <h2>Cat Photos</h2>
+
+      <!-- The p element is used to create a paragraph of text on websites. -->
+
+      <p>Everyone loves cute cats online!</p>
+
+      <!-- Commenting allows you to leave messages without affecting the browser display -->
+      <!-- TODO: Add link to cat photos-->
+
+      <!-- HTML5 has some elements that identify different content areas. These elements make your HTML easier to read and help with Search Engine Optimization (SEO) and accessibility. -->
+
+      <!-- The main element is used to represent the main content of the body of an HTML document -->
+      <!--  In the previous step, you put the h1, h2, comment, and p elements inside the main element. This is called nesting. Nested elements should be placed two spaces further to the right of the element they are nested in. This spacing is called indentation and it is used to make HTML easier to read. -->
+
+      <!-- You can add images to your website by using the img element. img elements have an opening tag without a closing tag. An element without a closing tag is known as a void element.
+     *HTML: attributes are special words used inside the opening tag of an element to control the element's behavior. The src attribute in an img element specifies the image's URL (where the image is located).
+     All img elements should have an alt attribute. The alt attribute's text is used for screen readers to improve accessibility and is displayed if the image fails to load. 
+    -->
+
+      <a href="https://freecatphotoapp.com">
+        <img
+          src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+          alt="A cute orange cat lying on its back"
+      /></a>
+      </section>
+
+      <!-- You can link to another page with the anchor (a) element. -->
+      <p>
+        See more <a href="https://freecatphotoapp.com">cat photos</a> in our
+        gallery
+      </p>
+
+      <p>
+        Everyone loves
+        <a
+          href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg"
+          >cute cats</a
+        >
+        online!
+      </p>
+    </main>
+
+    <!--  The section element is used to define sections in a document, such as chapters, headers, footers, or any other sections of the document. It is a semantic element that helps with SEO and accessibility. -->
+
+   <section>
+    <h2>Cat Lists</h2>
+    <h3>Things cats love:</h3>
+    <!-- To create an unordered list of items, you can use the ul element. 
+    The li element is used to create a list item in an ordered or unordered list. 
+    -->
+    <ul>
+        <li>catnip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+    </ul>
+   <figure>
+     <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+    <figcaption>Cats <em>love</em> lasagna.</figcaption>
+   </figure>
+    <!-- The figure element represents self-contained content and will allow you to associate an image with a caption.
+    A figure caption (figcaption) element is used to add a caption to describe the image contained within the figure element. 
+    -->
+<h3>Top 3 things cats hate:</h3>
+<ol>
+    <li>flea treatment</li>
+    <li>thunder </li>
+    <li>other cats</li>
+</ol>
+<figure>
+    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Two tabby kittens sleeping together on a couch.">
+    <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+</figure>
+
+
+   </section>
+<section>
+    <h2>Cat form</h2>
+    <!-- The form element is used to get information from a user like their name, email, and other details. -->
+     <form action="https://freecatphotoapp.com/submit-cat-photo">
+         <!-- The input element allows you several ways to collect data from a web form -->
+         <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label >
+            <input type="radio" id="indoor" name="indoor-outdoor" value="indoor"> Indoor
+            
+         </label>
+
+         <label for="">
+            <input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">Outdoor 
+         </label>
+         </fieldset>
+         <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input type="checkbox" name="" id="loving">
+         </fieldset>
+<input type="text" name="catphotourl"  placeholder="cat photo URL" required>
+<button type="submit">Submit</button>
+
+<!-- label elements are used to help associate the text for an input element with the input element itself (especially for assistive technologies like screen readers).
+ 
+The id attribute is used to identify specific HTML elements. Each id attribute's value must be unique from all other id values for the entire page.-->
+
+     </form>
+</section>
+  </body>
+</html>
