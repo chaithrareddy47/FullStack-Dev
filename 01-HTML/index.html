@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CatPhotoApp</title>
   </head>
   <body>
     <main>
@@ -97,7 +97,7 @@ Only use one h1 element per page and place lower importance headings below highe
          <fieldset>
             <legend>Is your cat an indoor or outdoor cat?</legend>
             <label >
-            <input type="radio" id="indoor" name="indoor-outdoor" value="indoor"> Indoor
+            <input type="radio" id="indoor" checked name="indoor-outdoor" value="indoor"> Indoor
             
          </label>
 
@@ -107,7 +107,15 @@ Only use one h1 element per page and place lower importance headings below highe
          </fieldset>
          <fieldset>
             <legend>What's your cat's personality?</legend>
-            <input type="checkbox" name="" id="loving">
+            <label for="loving">Loving
+            </label>
+            <input checked  type="checkbox" name="personality " id="loving"  value="loving">
+
+            <input type="checkbox" name="personality" id="lazy" value="lazy">
+            <label for="lazy">Lazy</label>
+
+            <input type="checkbox" name="personality" id="energetic" value="energetic">
+            <label for="energetic">Energetic</label>
          </fieldset>
 <input type="text" name="catphotourl"  placeholder="cat photo URL" required>
 <button type="submit">Submit</button>
@@ -118,5 +126,9 @@ The id attribute is used to identify specific HTML elements. Each id attribute's
 
      </form>
 </section>
+
+<footer>
+  <p>No Copyright - <a href="https://www.freecodecamp.org"> freeCodeCamp.org</a> </p>
+</footer>
   </body>
 </html>
